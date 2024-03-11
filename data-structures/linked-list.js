@@ -128,6 +128,33 @@ class LinkedList {
         this.size++;
     }
 
+    removeAt(index) {
+        if(index < 0 || index > this.size -1) {
+            console.log('Please enter valid index');
+            return -1;
+        }
+
+        // init count and current node
+        let count = 0;
+        let current = this.head;
+        let prev;
+        while(count < index) {
+            prev = current;
+            current = current.next
+            count++;
+        }
+        // pop
+        if(index == 0) {
+            this.head = current.next;
+        } else {
+            prev.next = current.next; //point current pointer to the prev element to delete the current node
+        }
+        
+        // reduce the size of linked list
+        this.size--;
+
+    }
+
     // returns the size of list
     getSize() {
         return this.size;
@@ -150,4 +177,7 @@ console.log(linkedList.fetchElements());
 linkedList.push(100);
 console.log(linkedList.fetchElements());
 linkedList.push(90);
+console.log(linkedList.fetchElements());
+linkedList.removeAt(9)
+console.log(linkedList.fetchElements());
 console.log(linkedList.getSize());
