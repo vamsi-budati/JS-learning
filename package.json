@@ -1,0 +1,29 @@
+{
+  "name": "azure-node-web-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js app for Azure deployment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamsi-budati/JS-learning.git"
+  },
+  "keywords": [
+    "Azure",
+    "Node",
+    "Web",
+    "App"
+  ],
+  "author": "Vamsi Krishna Budati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vamsi-budati/JS-learning/issues"
+  },
+  "homepage": "https://github.com/vamsi-budati/JS-learning#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
